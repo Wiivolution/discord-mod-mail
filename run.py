@@ -171,7 +171,7 @@ async def on_message(message):
 
         # for the purpose of nicknames, if anys
         for server in client.guilds:
-            member = server.get_member(author.id)
+            member = await client.fetch_user(author.id)
             if member:
                 author = member
             break
@@ -228,7 +228,7 @@ async def on_message(message):
                             if reason:
                                 to_send += ' Reason: ' + reason
                             for server in client.guilds:
-                                member = server.get_member(user_id)
+                                member = await client.fetch_user(user_id)
                                 if member:
                                     try:
                                         await member.send(to_send)
@@ -259,7 +259,7 @@ async def on_message(message):
                         if not is_quiet:
                             to_send = 'Your messages are no longer being ignored by staff.'
                             for server in client.guilds:
-                                member = server.get_member(user_id)
+                                member = await client.fetch_user(user_id)
                                 if member:
                                     try:
                                         await member.send(to_send)
@@ -297,7 +297,7 @@ async def on_message(message):
                     await client.channel.send('Did you forget to enter a message?')
                 else:
                     for server in client.guilds:
-                        member = server.get_member(client.last_id)
+                        member = await client.fetch_user(client.last_id)
                         if member:
                             attachments = []
                             try:
@@ -397,7 +397,7 @@ async def on_message(message):
                     await client.channel.send('Did you forget to enter a message?')
                 else:
                     for server in client.guilds:
-                        member = server.get_member(int(command_name))
+                        member = await client.fetch_user(int(command_name))
                         if member:
                             attachments = []
                             try:

@@ -1,0 +1,13 @@
+Privacy Policy for Wiivolution Mod-Mail
+
+The bot (Wiivolution Mod-Mail) collects and stores your Discord username, user ID, profile picture, and messages sent to it in its DMs.
+
+This data is stored for as long as necessary for moderation and transparency purposes.
+
+The data stored is not shared or sold with anyone besides staff of the Wiivolution Team.
+
+We store the data in a private channel in our main Discord server (ID: 1464772133782556923).
+
+Users may request deletion of their data at any time by contacting wiivolutioncontact@gmail.com.
+
+This privacy policy is effective as of May 9th, 2026.
